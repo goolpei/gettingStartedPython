@@ -1,19 +1,24 @@
 
 
 while True:
-    input_first_num = (input("Input First Num: "))
-    input_second_num = (input("Input Second Num: "))
-    operator = input("Input Operator (+, -, *, /, stop): ")
     
-    if operator == "stop":
-        break
-    
-
+    input_first_num = input("Input First Num : ")
     try:
         num1 = float(input_first_num)
+    except ValueError:
+        print("Please enter a valid number.")
+        continue
+
+    operator = input("Input Operator (+, -, *, /): ")
+    if operator not in ['+', '-', '*', '/']:
+        print("Please enter a valid operation (+, -, *, /).")
+        continue
+        
+    input_second_num = input("Input Second Num: ")
+    try:
         num2 = float(input_second_num)
     except ValueError:
-        print("Please enter valid numbers.")
+        print("Please enter a valid number.")
         continue
 
 
@@ -28,10 +33,14 @@ while True:
             result = "Undefined"
         else:
             result = num1 / num2
-    else:
-        print("Please use an operator.")
-        result = "N/A"
+
 
     print(num1, operator, num2, "=", result )
+    input_choice = input("Do you want to continue? (Y/N): ")
+    if input_choice == 'Y' or input_choice == 'y':
+        continue
+    else:
+        break
+    
 
 print("Calculator Stopped")
