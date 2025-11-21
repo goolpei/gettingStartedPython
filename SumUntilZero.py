@@ -1,7 +1,6 @@
 arr = []
 sum = 0
 
-
 while True:
     num = int(input("Enter number (Enter 0 to stop): "))
     arr.append(num)
