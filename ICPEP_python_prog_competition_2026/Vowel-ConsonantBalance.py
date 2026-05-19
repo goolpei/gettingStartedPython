@@ -2,8 +2,6 @@ def isVowel(s):
     char = s.lower()
     return char in 'aeiou'
     
-
-
 s = input("Enter string: ")
 n = len(s)
 max_length = 0
@@ -24,5 +22,4 @@ for i in range(n):
             if current_length > max_length:
                 max_length = current_length
 
-                
 print(f"Result: {max_length}")

@@ -25,10 +25,6 @@ for j in range(arrSize):
                 index_compare = index_count
             break
         
-        
-        
-    
-
 if(index_compare == float('inf')): found = False
 
 if(found):
