@@ -7,7 +7,6 @@ targetSum = arrSize_targetSum[1]
 print("Enter array elements:", end=" ")
 arr_elements = list(map(int, input().split()))
 
-
 index_compare = float('inf')
 found = True
 
