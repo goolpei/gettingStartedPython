@@ -24,11 +24,24 @@
 # if current_pos in game_map:
 #     print(f'You are currently in {game_map[current_pos]}.')
 
-items = ['book', 'pencil', 'paper']
-d = {}
-for i, item in enumerate(items, start=1):
-    d[i] = item
+# items = ['book', 'pencil', 'paper']
+# d = {}
+# for i, item in enumerate(items, start=1):
+#     d[i] = item
 
-for index, object in d.items():
-    print(f'Index {index} contains: {object}')
+# print(d)
+# print(d.keys())
+# print(d.values())
+# print(d.items())
 
+# print(d.get(0, 'Hey'))
+
+products = {
+    'Laptop': 792, 
+    'Smartphone': 480, 
+    'Tablet': 200, 
+    'Headphones': 56
+}
+
+for i, prod in enumerate(products.items()):
+    print(i, prod[0], prod[1])

@@ -18,8 +18,6 @@ def countPlateau(seq):
     return plateau_count
             
 
-
-
 sequence = list(map(int, input("Enter sequence: ").split()))
 
 p_count = countPlateau(sequence)
