@@ -7,7 +7,7 @@ while i < len(nums):
         if nums[j] < nums[i]:
             nums[i], nums[j] = nums[j], nums[i]
 
-        j += 1
+        j += 1 
     i += 1
 
 print("Sorted (ascending):", nums)
