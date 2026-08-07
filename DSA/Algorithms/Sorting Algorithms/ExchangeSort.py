@@ -1,4 +1,5 @@
-def pick_sort(arr, reverse = False):
+# exchange_sort
+def exchange_sort(arr, reverse = False):
     n = len(arr)
     i = 0
     while(i < n):
@@ -19,8 +20,8 @@ def pick_sort(arr, reverse = False):
 arr = list(map(int, input("Enter an array of numbers: ").split()))
 choice = input("Ascending (Enter 'a') or Descending (Enter 'd)?: ")
 if choice == 'a':
-    sorted_arr = pick_sort(arr)
+    sorted_arr = exchange_sort(arr)
 else:
-    sorted_arr = pick_sort(arr, reverse=True)
+    sorted_arr = exchange_sort(arr, reverse=True)
 
 print(sorted_arr)
